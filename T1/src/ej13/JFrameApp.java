@@ -104,6 +104,7 @@ public class JFrameApp extends javax.swing.JFrame {
 
         this.jTextAreaContenido.setColumns(20);
         this.jTextAreaContenido.setRows(5);
+        this.jTextAreaContenido.setEditable(false);
         jScrollPaneContenido.setViewportView(this.jTextAreaContenido);
 
         this.jTextAreaTexto.setColumns(20);
