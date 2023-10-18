@@ -39,8 +39,7 @@ public class JFrameApp extends javax.swing.JFrame {
     private void jButtonMostrarContenidoActionPerformed(java.awt.event.ActionEvent ignoredEvent) {
         try (BufferedReader reader = new BufferedReader(new FileReader(this.archivo))) {
             this.jTextAreaContenido.setText("");
-            reader.lines().forEach(linea -> this.jTextAreaContenido.append(linea));
-
+            reader.lines().forEach(linea -> this.jTextAreaContenido.append(linea + "\n"));
         } catch (FileNotFoundException exception) {
             this.jTextAreaContenido.setText("*El fichero no existe*");
         } catch (IOException exception) {
