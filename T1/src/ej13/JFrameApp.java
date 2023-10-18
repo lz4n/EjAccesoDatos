@@ -15,7 +15,7 @@ public class JFrameApp extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldFichero;
 
     public JFrameApp() {
-        initComponents();
+        this.initComponents();
     }
 
     private void escribirEnFichero(boolean append) {
